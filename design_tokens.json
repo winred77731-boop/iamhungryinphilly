@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0",
+  "source": "http://localhost:3000",
+  "capturedAt": "2026-08-21T21:30:00Z",
+  "colors": {
+    "accent": "#E8A317",
+    "accentLight": "#F4B942",
+    "accentDark": "#D4880C",
+    "baseDark": "#0E0F11",
+    "grayDark": "#18191B",
+    "cardDark": "#1A1B1D",
+    "borderDark": "#313131",
+    "heading": "#FFFFFF",
+    "bodyText": "#9E9FA0",
+    "mutedText": "#9E9FA0"
+  },
+  "typography": {
+    "display": "Source Sans 3",
+    "sans": "Roboto",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace",
+    "scale": {
+      "h1": { "size": "88px", "weight": "700", "lineHeight": "92.4px", "family": "Source Sans 3" },
+      "h2": { "size": "48px", "weight": "700", "lineHeight": "60px", "family": "Source Sans 3" },
+      "h3": { "size": "18px", "weight": "600", "lineHeight": "28px", "family": "Source Sans 3" },
+      "h4": { "size": "14px", "weight": "600", "lineHeight": "20px", "letterSpacing": "0.7px", "family": "Source Sans 3" },
+      "body": { "size": "20px", "weight": "400", "lineHeight": "28px", "family": "Roboto" },
+      "base": { "size": "16px", "weight": "400", "lineHeight": "30px", "family": "Roboto" }
+    }
+  },
+  "spacing": {
+    "baseUnit": "4px",
+    "scale": [4,6,8,12,12.8,14.4,16,18.4,19.2,20,21.6,24,24.8,25.6,26.4,27.2,28.8,32,35.2,40,48,64,80,100,100.8,120,128,192,366],
+    "sectionPadding": { "desktop": "100px", "mobile": "60px" }
+  },
+  "borderRadius": {
+    "pill": "999px",
+    "card": "10px",
+    "teamCard": "22.4px",
+    "portrait": "16px"
+  },
+  "shadows": {
+    "navScrolled": "rgba(0,0,0,0.5) 0px 25px 50px -12px",
+    "card": "0 24px 70px rgba(0,0,0,0.5), 0 12px 40px rgba(0,0,0,0.3)",
+    "teamCardHover": "0 30px 80px rgba(0,0,0,0.36), 0 0 34px rgba(232,163,23,0.06)",
+    "teamGlow": "0 0 90px rgba(232,163,23,0.05)",
+    "accentInset": "rgba(232,163,23,0.07) 0px 0px 50px 0px inset"
+  },
+  "layout": {
+    "maxWidth": "1314px",
+    "containerBreakpoint": "1200px"
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --color-accent: #E8A317;
+  --color-accent-light: #F4B942;
+  --color-accent-dark: #D4880C;
+  --color-base-dark: #0E0F11;
+  --color-gray-dark: #18191B;
+  --color-card-dark: #1A1B1D;
+  --color-border-dark: #313131;
+  --color-heading: #FFFFFF;
+  --color-text-muted: #9E9FA0;
+  --color-body-text: #9E9FA0;
+
+  --font-display: "Source Sans 3", sans-serif;
+  --font-sans: "Roboto", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --spacing-unit: 4px;
+  --section-padding-desktop: 100px;
+  --section-padding-mobile: 60px;
+  --container-max: 1314px;
+  --container-breakpoint: 1200px;
+
+  --radius-pill: 999px;
+  --radius-card: 10px;
+  --radius-team-card: 22.4px;
+  --radius-portrait: 16px;
+
+  --shadow-nav: rgba(0,0,0,0.5) 0px 25px 50px -12px;
+  --shadow-card: 0 24px 70px rgba(0,0,0,0.5), 0 12px 40px rgba(0,0,0,0.3);
+  --shadow-team-card-hover: 0 30px 80px rgba(0,0,0,0.36), 0 0 34px rgba(232,163,23,0.06);
+  --shadow-team-glow: 0 0 90px rgba(232,163,23,0.05);
+  --shadow-accent-inset: rgba(232,163,23,0.07) 0px 0px 50px 0px inset;
+
+  --animate-fade-in: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  --animate-fade-in-up: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  --animate-slow-zoom: slowZoom 20s ease-in-out infinite alternate;
+  --animate-marquee: marquee 25s linear infinite;
+}
