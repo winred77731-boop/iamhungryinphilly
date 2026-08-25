@@ -25,7 +25,7 @@ export default function Footer() {
               I Am Hungry <span className="text-accent">In Philadelphia</span>
             </h3>
             <p className="text-sm text-text-muted mb-4 max-w-md leading-relaxed">
-              A documentary film exploring hunger in the poorest big city in America. The Many Faces of Food Insecurity.
+              A documentary film exploring hunger in one of America's largest cities. The Many Faces of Food Insecurity.
             </p>
             <p className="text-xs text-white/30">Philadelphia, PA</p>
           </div>

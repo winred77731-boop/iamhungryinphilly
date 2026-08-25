@@ -18,9 +18,9 @@ export default function Stats() {
   }, []);
 
   const stats = [
-    { number: "6th", label: "Largest City", desc: "Philadelphia is the sixth biggest city in the country" },
-    { number: "#1", label: "Poorest of Top 10", desc: "The poorest major metropolitan area out of the top ten" },
-    { number: "↑", label: "Rising Insecurity", desc: "Rates have gone down nationwide — except in Philadelphia" },
+    { number: "~340,000", label: "Philadelphians", desc: "experience food insecurity" },
+    { number: "103,380", label: "Philadelphia Children", desc: "experience food insecurity" },
+    { number: "30.5%", label: "Nearly 1 in 3 Children", desc: "in Philadelphia experiences food insecurity" },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function Stats() {
             {/* Section header */}
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight" style={{ fontFamily: "var(--font-source-sans)" }}>
-                Food insecurity is going down everywhere <span className="text-accent border-b-2 border-accent pb-0.5">except</span> Philadelphia.
+                Nearly <span className="text-accent border-b-2 border-accent pb-0.5">1 in 3</span> Philadelphia children experiences food insecurity.
               </h2>
             </div>
 
@@ -80,6 +80,11 @@ export default function Stats() {
                 ))}
               </div>
             </div>
+
+            {/* Source line */}
+            <p className="text-center mt-10 text-xs text-text-muted/60">
+              Source: Feeding America, Map the Meal Gap.
+            </p>
           </div>
       </div>
     </section>

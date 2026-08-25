@@ -27,9 +27,11 @@ export default function Audience() {
         <div className="audience-layout">
           <div className={`audience-intro transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
             <span className="sub-title">Audience</span>
-            <p className="audience-overline">Audience Profile</p>
+            <p className="audience-overline">Who is this film for?</p>
             <h2 className="audience-title" style={{ fontFamily: "var(--font-source-sans)" }}>
-              A documentary with broad civic and <span>cultural relevance.</span>
+              For the people experiencing hunger.<br />
+              For the people trying to solve it.<br />
+              And for the people who <span>don&apos;t realize how close to home it is.</span>
             </h2>
 
             <p className="audience-intro-copy">

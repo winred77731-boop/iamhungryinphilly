@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { SpotlightNavLinks } from "@/components/ui/SpotlightNavLinks";
-import { RadialGlowLink } from "@/components/ui/RadialGlowLink";
 
 export default function Nav({ scrolled }: { scrolled: boolean }) {
   const [open, setOpen] = useState(false);
@@ -40,9 +39,6 @@ export default function Nav({ scrolled }: { scrolled: boolean }) {
           <SpotlightNavLinks items={links} />
         </div>
 
-        {/* CTA */}
-        <RadialGlowLink href="#proposal" className="hidden md:inline-flex" showArrow>Support the Film</RadialGlowLink>
-
         {/* Mobile toggle */}
         <button
           className="md:hidden text-white p-2"
@@ -73,7 +69,6 @@ export default function Nav({ scrolled }: { scrolled: boolean }) {
               {link.label}
             </a>
           ))}
-          <RadialGlowLink href="#proposal" className="self-start mt-2" onClick={() => setOpen(false)}>Support the Film</RadialGlowLink>
         </div>
       </div>
     </nav>

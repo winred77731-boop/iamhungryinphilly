@@ -41,15 +41,15 @@ export default function Synopsis() {
           {/* Text */}
           <div className={`transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`} style={{ transitionDelay: "200ms" }}>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: "var(--font-source-sans)" }}>
-              The birthplace of the country. <span className="text-accent">The poorest big city.</span>
+              The birthplace of the country. <span className="text-accent">A city where hunger remains hidden in plain sight.</span>
             </h2>
 
             <div className="space-y-4 text-text-muted leading-relaxed">
               <p>
-                Philadelphia needs little introduction — the birthplace of the country, home of <span className="text-white font-semibold">Rocky</span>, cheesesteaks, some of the finest restaurants in the country, and the biggest city park in the world.
+                Philadelphia needs little introduction — the birthplace of the country, home of <span className="text-white font-semibold">Rocky</span>, cheesesteaks, some of the finest restaurants in the country, and one of America&apos;s great urban park systems.
               </p>
               <p>
-                The film begins with the familiar, a quick look at the things everyone knows, but then shakes things up with a raw, uncompromising view of the country&apos;s poorest big city.
+                The film begins with the familiar, a quick look at the things everyone knows, but then shakes things up with a raw, uncompromising view of a city where hunger remains hidden in plain sight.
               </p>
               <p>
                 We introduce the problem through interviews with <span className="text-white font-semibold">local and federal officials</span>, <span className="text-white font-semibold">professors</span>, <span className="text-white font-semibold">medical professionals</span>, <span className="text-white font-semibold">advocates</span>, people working on the streets toward a solution, and finally, <span className="text-accent font-semibold">first-person accounts</span> of what it is like to live not knowing where your next meal will come from.

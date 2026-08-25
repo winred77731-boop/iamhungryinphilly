@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { BorderBeam } from "border-beam";
 import { RadialGlowLink } from "@/components/ui/RadialGlowLink";
 
 export default function Proposal() {
@@ -16,15 +15,6 @@ export default function Proposal() {
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
-
-  const budgetItems = [
-    { item: "Equipment Rental", pct: 20 },
-    { item: "Crew", pct: 25 },
-    { item: "Post Production", pct: 20 },
-    { item: "Festival Strategy", pct: 10 },
-    { item: "Marketing & PR", pct: 15 },
-    { item: "Contingency", pct: 10 },
-  ];
 
   return (
     <section ref={ref} id="proposal" className="proposal-section section-padding">
@@ -42,12 +32,11 @@ export default function Proposal() {
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="sub-title">The Proposal</span>
           <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight" style={{ fontFamily: "var(--font-source-sans)" }}>
-            A <span className="text-accent">$50,000</span> documentary with Oscar-qualifying ambitions
+            A Philadelphia Story With <span className="text-accent">National Relevance</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          {/* Left: description with check list — Agenko pattern */}
+        <div className="max-w-3xl mx-auto">
           <div className={`transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`} style={{ transitionDelay: "200ms" }}>
             <div className="space-y-4 text-text-muted leading-relaxed mb-8">
               <p>
@@ -58,62 +47,15 @@ export default function Proposal() {
               </p>
             </div>
 
-            {/* Check list — Agenko pattern */}
-            <ul className="check-list mb-8">
-              <li>
-                <svg className="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                Production began winter 2024, continuing through spring
-              </li>
-              <li>
-                <svg className="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                Post-production completed for Oscar-qualifying festival submission
-              </li>
-              <li>
-                <svg className="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                Team meeting since November 2023, project coming together quickly
-              </li>
-            </ul>
+            {/* Production status */}
+            <div className="mb-8">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent text-sm font-medium uppercase tracking-wider" style={{ fontFamily: "var(--font-source-sans)" }}>
+                <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
+                We Are In Post Production
+              </span>
+            </div>
 
             <RadialGlowLink href="#team" showArrow>Meet the Team</RadialGlowLink>
-          </div>
-
-          {/* Right: budget card — dark card pattern */}
-          <div className={`transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"}`} style={{ transitionDelay: "300ms" }}>
-            <BorderBeam
-              size="md"
-              colorVariant="sunset"
-              theme="dark"
-              duration={3.5}
-              strength={0.7}
-            >
-            <div className="dark-card p-8">
-              <h3 className="text-lg font-semibold text-accent mb-6 uppercase tracking-wider" style={{ fontFamily: "var(--font-source-sans)" }}>
-                Budget Allocation
-              </h3>
-              <div className="space-y-5">
-                {budgetItems.map((item, i) => (
-                  <div key={i}>
-                    <div className="flex justify-between text-sm mb-2">
-                      <span className="text-text-muted">{item.item}</span>
-                      <span className="text-white font-medium">{item.pct}%</span>
-                    </div>
-                    <div className="h-2 bg-border-dark rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-accent rounded-full transition-all duration-1000"
-                        style={{ width: visible ? `${item.pct}%` : "0%", transitionDelay: `${400 + i * 100}ms` }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-8 pt-6 border-t border-border-dark">
-                <div className="flex justify-between items-baseline">
-                  <span className="text-sm font-semibold text-white uppercase tracking-wider">Total Budget</span>
-                  <span className="text-4xl font-bold text-accent" style={{ fontFamily: "var(--font-source-sans)" }}>$50,000</span>
-                </div>
-              </div>
-            </div>
-            </BorderBeam>
           </div>
         </div>
       </div>

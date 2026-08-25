@@ -19,7 +19,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "I Am Hungry In Philadelphia — A Documentary Film by Harry Hayman",
   description:
-    "The Many Faces of Food Insecurity. A documentary exploring hunger in Philadelphia — the poorest big city in America. Produced by Harry Hayman, directed by Kaloni Davis, written by David J. Greenberg.",
+    "The Many Faces of Food Insecurity. A documentary exploring hunger in one of America's largest cities. Produced by Harry Hayman, directed by Kaloni Davis, written by David J. Greenberg.",
   keywords: [
     "food insecurity Philadelphia",
     "Philadelphia documentary",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "I Am Hungry In Philadelphia — A Documentary Film",
     description:
-      "The Many Faces of Food Insecurity. A documentary exploring hunger in the poorest big city in America.",
+      "The Many Faces of Food Insecurity. A documentary exploring hunger in one of America's largest cities.",
     type: "website",
     url: "https://iamhungryinphilly.com",
     siteName: "I Am Hungry In Philadelphia",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "I Am Hungry In Philadelphia — A Documentary Film",
     description:
-      "The Many Faces of Food Insecurity. A documentary exploring hunger in the poorest big city in America.",
+      "The Many Faces of Food Insecurity. A documentary exploring hunger in one of America's largest cities.",
   },
 };
 

@@ -82,7 +82,7 @@ export default function Hero() {
               className="text-lg md:text-xl text-white/80 mb-4 max-w-xl opacity-0 animate-fade-in-up"
               style={{ animationDelay: "0.6s" }}
             >
-              The Many Faces of Food Insecurity — exploring hunger in the poorest big city in America.
+              The Many Faces of Food Insecurity — exploring hunger in one of America's largest cities.
             </p>
           </div>
 
